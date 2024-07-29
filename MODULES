@@ -1,0 +1,11 @@
+# Modules
+
+**string Module**:
+
+- string.ascii_letters: A string constant containing all ASCII letters (both uppercase and lowercase) from A-Z and a-z, useful for generating random letters.
+- string.digits: A string constant with all decimal digits (0-9), allowing easy access to numeric characters.
+- string.punctuation: A string constant of all special characters and punctuation marks, including symbols like !, ", #, etc.
+
+**random Module**:
+- random.random(): Generates a random floating-point number uniformly in the range [0.0, 1.0), serving as the base for other random functions.
+- random.choices(): Selects random elements from a given sequence with optional weights, useful for generating random selections from lists or strings.
