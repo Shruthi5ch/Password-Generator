@@ -1,7 +1,7 @@
 # Password-Generator
 Passwords are a means by which a user proves that they are authorized to use a device.
 It is important that passwords must be long and complex.
-This repository contains a Python-based password generator that creates secure, random passwords.
+This repository contains a Python-based password generator that creates secure, random passwords base on the user input.
 
 # Features:
 - User Input: The user provides a string of characters to include in the password.
