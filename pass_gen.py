@@ -9,17 +9,17 @@ def apply_operation(char, operation, skip_value):
 
     # Apply the selected operation
     if operation == '+':
-        return chr((ascii_value + skip_value) % 128)  # Wrap around for ASCII range
+        return chr((ascii_value + skip_value) % 128)  
     elif operation == '-':
-        return chr((ascii_value - skip_value) % 128)  # Wrap around for ASCII range
+        return chr((ascii_value - skip_value) % 128)  
     elif operation == '*':
-        return chr((ascii_value * skip_value) % 128)  # Wrap around for ASCII range
+        return chr((ascii_value * skip_value) % 128) 
     elif operation == '%':
         return chr(ascii_value % skip_value) if skip_value != 0 else char
     elif operation == '**':
-        return chr((ascii_value ** 2) % 128)  # Square value and wrap around
+        return chr((ascii_value ** 2) % 128)  
     else:
-        return char  # Default case, no change
+        return char  
 
 def main():
     # Define available operations
@@ -29,14 +29,14 @@ def main():
     # Get original password from the user
     original_password = input("Enter your password: ")
 
-    # Ask user to select 3 valid operations
+    # Ask user to select 3 operations
     selected_operations = []
     for i in range(3):
         while True:
             operation = input(f"Select operation {i + 1} from the available options: ")
             if operation in operations:
                 selected_operations.append(operation)
-                break  # Exit the loop if a valid operation is selected
+                break  
             else:
                 print("Invalid operation. Please select one of the following:", operations)
 
